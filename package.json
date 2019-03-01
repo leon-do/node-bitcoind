@@ -8,9 +8,6 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "rm -f ./bin/bitcoind && touch ./bin/bitcoind",
-    "install": "node ./bin/download.js",
-    "update": "node ./bin/update.js"
   },
   "keywords": [
     "bitcoin",
