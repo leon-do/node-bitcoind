@@ -4,7 +4,6 @@
   "description": "Spawn a Bitcoin Core node",
   "main": "index.js",
   "bin": {
-    "bitcoind": "./bin/bitcoind"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
