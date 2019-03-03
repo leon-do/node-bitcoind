@@ -7,10 +7,11 @@ let RpcClient = require('bitcoin-core')
 let flags = require('./flags.js')
 
 const logging = process.env.BITCOIND_LOG
-const binPath = process.env.BITCOIND_BINARY ||
-  require.resolve('../bin/bitcoind')
 
 function spawn (opts) {
+  const binPath = process.env.BITCOIND_BINARY ||
+  require.resolve('../bin/bitcoind')
+  
   let args = flags(opts)
   debug('spawning: bitcoind ' + args.join(' '))
   let start = Date.now()
